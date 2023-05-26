@@ -216,11 +216,12 @@ Dirección de memoria | Contenido
 Como puedes ver, los bytes se almacenan de derecha a izquierda en la memoria.
 
 Esta configuración tiene implicaciones cuando trabajamos con datos multibyte, como números enteros. Los bytes que componen un número entero se almacenan en el orden inverso. Por ejemplo, el número entero de 32 bits "305419896" se representaría en la memoria de LEGv8 de la siguiente manera:
-
+```
 Dirección de memoria   | Contenido
 0x1000                 | 0x18   ; Byte menos significativo
 0x1001                 | 0x2D
 0x1002                 | 0x4E
 0x1003                 | 0x11   ; Byte más significativo
 
+```
 Es importante tener en cuenta esta configuración al leer o escribir datos en memoria, especialmente cuando interactuamos con otros sistemas o formatos de datos que pueden tener un orden de bytes diferente.
