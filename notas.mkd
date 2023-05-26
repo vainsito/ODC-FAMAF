@@ -204,13 +204,14 @@ En un sistema little-endian, los bytes menos significativos se almacenan en las 
 Imagina que tienes una palabra de cuatro letras: "HOLA". En la memoria del microprocesador, esta palabra se almacena como una secuencia de bytes. Ahora, en un sistema little-endian como LEGv8, los bytes se guardan de atrás hacia adelante. Es decir, la "A" se guarda primero, seguida de la "L", la "O" y finalmente la "H".
 
 Entonces, si representamos esta palabra en la memoria de un sistema little-endian, se vería así:
-
+```
 Dirección de memoria | Contenido
 0x1000               | 0x41   ; Byte correspondiente a la letra 'A'
 0x1001               | 0x4C   ; Byte correspondiente a la letra 'L'
 0x1002               | 0x4F   ; Byte correspondiente a la letra 'O'
 0x1003               | 0x48   ; Byte correspondiente a la letra 'H'
 
+```
 
 Como puedes ver, los bytes se almacenan de derecha a izquierda en la memoria.
 
